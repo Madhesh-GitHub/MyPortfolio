@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhesh K - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .skill-badge {
+            display: inline-block;
+            margin: 0.25rem;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Madhesh K</h1>
+            <p class="text-xl">2nd Year Computer Science and Engineering Student</p>
+            <p class="text-lg mt-2">KPR Institute of Engineering and Technology</p>
+            
+            <div class="flex justify-center space-x-4 mt-6">
+                <a href="https://github.com/Madhesh-GitHub" target="_blank" class="hover:text-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/its-madhesh/" target="_blank" class="hover:text-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Coding Profiles Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-semibold text-center mb-8">Coding Profiles</h2>
+        <div class="grid md:grid-cols-3 gap-6" id="codingProfiles">
+            <!-- Profiles will be dynamically populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8" id="projectsContainer">
+                <!-- Projects will be dynamically populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto px-4 py-12 bg-white">
+        <h2 class="text-3xl font-semibold text-center mb-10">Technical Skills</h2>
+        
+        <div class="grid md:grid-cols-4 gap-8">
+            <!-- Programming Languages -->
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4 text-blue-600">Programming Languages</h3>
+                <div id="programmingLanguages" class="flex flex-wrap">
+                    <!-- Languages will be dynamically added -->
+                </div>
+            </div>
+
+            <!-- Web Technologies -->
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4 text-blue-600">Web Technologies</h3>
+                <div id="webTechnologies" class="flex flex-wrap">
+                    <!-- Web technologies will be dynamically added -->
+                </div>
+            </div>
+
+            <!-- Machine Learning -->
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4 text-blue-600">Machine Learning</h3>
+                <div id="machineLearning" class="flex flex-wrap">
+                    <!-- Machine Learning skills will be dynamically added -->
+                </div>
+            </div>
+
+            <!-- Other Tools -->
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4 text-blue-600">Other Tools</h3>
+                <div id="otherTools" class="flex flex-wrap">
+                    <!-- Other tools will be dynamically added -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Profile Section -->
+    <section class="container mx-auto px-4 py-12 text-center">
+        <h2 class="text-3xl font-semibold mb-6">GitHub Profile</h2>
+        <div class="flex flex-col items-center">
+            <img 
+                src="GithubProfile.png" 
+                alt="GitHub Profile" 
+                class="rounded-full w-64 h-64 object-cover mb-6 shadow-lg"
+            />
+            <p class="max-w-2xl mx-auto text-gray-600">
+                Active open-source contributor passionate about solving real-world problems 
+                through innovative software solutions. Continuously learning and expanding 
+                my skills in software development and machine learning.
+            </p>
+            <a 
+                href="https://github.com/Madhesh-GitHub" 
+                target="_blank" 
+                class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+            >
+                Visit GitHub Profile
+            </a>
+        </div>
+    </section>
+
+    
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6 text-center">
+        <p>© 2024 Madhesh K. All Rights Reserved.</p>
+        <p class="text-sm mt-2">Designed with ❤️ by Madhesh K</p>
+    </footer>
+
+    <script>
+        // Dynamic Content for Coding Profiles
+        const codingProfiles = [
+            {
+                name: "LeetCode",
+                url: "https://leetcode.com/u/madheshkannan/",
+                description: "Algorithm problem-solving platform with coding challenges",
+                image: "Leetcode.png"
+            },
+            {
+                name: "HackerRank",
+                url: "https://www.hackerrank.com/profile/itsmadhesh",
+                description: "Coding skills assessment and competitive programming platform",
+                image: "Hackerrank.png"
+            },
+            {
+                name: "GeeksforGeeks",
+                url: "https://www.geeksforgeeks.org/user/itsmadhesh27/",
+                description: "Computer science learning and coding practice community",
+                image: "Geeksforgeek.png"
+            }
+        ];
+
+        const projects = [
+            {
+                name: "ClassBot v1",
+                description: "ClassBot v1 is a student information system chatbot that provides students with easy access to their academic information. Built with Python, Flask, and SpaCy, ClassBot interacts with a PostgreSQL database to retrieve students' marks and other details. The chatbot is designed to be user-friendly, offering quick and efficient responses to student queries on their academic performance.",
+                techStack: ["Python", "Spacy", "HTML/CSS/JavaScript", "PostgreSql", "Flask", "Sql"],
+                githubLink: "https://github.com/Madhesh-GitHub/ClassBot",
+                image: "Classbot.png"
+            },
+            {
+                name: "Diabetes Predictor",
+                description: "Diabetes Predictor is a machine learning-based application that predicts the likelihood of a person having diabetes based on various health parameters. Using algorithms like Logistic Regression or Random Forest, the model analyzes input features such as age, BMI, blood pressure, and glucose levels to make an accurate prediction. The system provides users with an easy-to-use interface for input and delivers quick results, helping individuals assess their risk of diabetes early.",
+                techStack: ["Python", "LogisticRegression", "Flask", "HTML/CSS"],
+                githubLink: "https://github.com/Madhesh-GitHub/DiabetesPredictor",
+                image: "DiabetesPredictor.png"
+            }
+        ];
+
+        // Populate Coding Profiles
+        const profilesContainer = document.getElementById('codingProfiles');
+        codingProfiles.forEach(profile => {
+            const profileCard = document.createElement('a');
+            profileCard.href = profile.url;
+            profileCard.target = '_blank';
+            profileCard.classList.add('bg-white', 'shadow-lg', 'rounded-lg', 'overflow-hidden', 'transform', 'transition', 'hover-scale');
+            
+            profileCard.innerHTML = `
+                <img 
+                    src="${profile.image}" 
+                    alt="${profile.name} Profile" 
+                    class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">${profile.name}</h3>
+                    <p class="text-gray-600">${profile.description}</p>
+                </div>
+            `;
+            
+            profilesContainer.appendChild(profileCard);
+        });
+
+        // Populate Projects
+        const projectsContainer = document.getElementById('projectsContainer');
+        projects.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.classList.add('bg-white', 'rounded-lg', 'shadow-lg', 'overflow-hidden');
+            
+            projectCard.innerHTML = `
+                <img 
+                    src="${project.image}" 
+                    alt="${project.name}" 
+                    class="w-full h-64 object-cover"
+                />
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-3">${project.name}</h3>
+                    <p class="text-gray-600 mb-4">${project.description}</p>
+                    <div class="mb-4">
+                        <strong>Tech Stack:</strong>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            ${project.techStack.map(tech => 
+                                `<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">${tech}</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    <a 
+                        href="${project.githubLink}" 
+                        target="_blank" 
+                        class="inline-flex items-center text-blue-600 hover:text-blue-800"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
+            `;
+            
+            projectsContainer.appendChild(projectCard);
+        });
+
+        // Skills Data
+        const skills = {
+            programmingLanguages: [
+                "Python", "Java", "C", "C++", "JavaScript", "Go"
+            ],
+            webTechnologies: [
+                "HTML", "CSS", "JavaScript", "Flask", "PostgreSQL"
+            ],
+            machineLearning: [
+                "Supervised ML", 
+                "Linear Regression", 
+                "Logistic Regression"
+            ],
+            otherTools: [
+                "Power BI", 
+                "Selenium WebDriver"
+            ]
+        };
+
+        // Function to create skill badges
+        function createSkillBadges(containerId, skills, baseColor = 'blue') {
+            const container = document.getElementById(containerId);
+            skills.forEach(skill => {
+                const badge = document.createElement('span');
+                badge.classList.add(
+                    'skill-badge', 
+                    `bg-${baseColor}-100`, 
+                    `text-${baseColor}-800`
+                );
+                badge.textContent = skill;
+                container.appendChild(badge);
+            });
+        }
+
+        // Create skill badges
+        createSkillBadges('programmingLanguages', skills.programmingLanguages, 'green');
+        createSkillBadges('webTechnologies', skills.webTechnologies, 'purple');
+        createSkillBadges('machineLearning', skills.machineLearning, 'red');
+        createSkillBadges('otherTools', skills.otherTools, 'yellow');
+    </script>
+</body>
+</html>
